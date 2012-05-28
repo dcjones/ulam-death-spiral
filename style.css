@@ -18,9 +18,12 @@ header {
     padding: 0;
 }
 
-canvas#ulam_canvas {
-    border: 1px dashed #888;
+#ulam_base {
+    display: none;
+}
 
+#ulam {
+    border: 2px dashed #888;
     margin: 0 auto;
 }
 
