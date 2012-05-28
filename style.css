@@ -1,0 +1,26 @@
+
+body {
+    color: #ddd;
+    background: #000;
+}
+
+header {
+    color: #f5a;
+    font-family: PT Sans;
+    font-size: 48pt;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+canvas#ulam_canvas {
+    border: 1px dashed #888;
+
+    margin: 0 auto;
+}
+
