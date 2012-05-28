@@ -4,16 +4,36 @@ body {
     background-color: #222;
 }
 
+a {
+    color: #888;
+    text-decoration: none;
+    font-family: HelveticaNeue, Arial, sans-serif;
+    font-size: 9pt;
+}
+
+a#more {
+    float: left;
+}
+
+a#wtf {
+    float: center;
+}
+
+a#less {
+    float: right;
+}
+
 header {
     color: #f5a;
     font-family: silkscreen;
-    font-size: 48pt;
+    font-size: 32pt;
     text-align: center;
 }
 
 .container {
+    text-align: center;
     position: relative;
-    width: 900px;
+    width: 700px;
     margin: 0 auto;
     padding: 0;
 }
@@ -23,7 +43,8 @@ header {
 }
 
 #ulam {
-    border: 2px dashed #888;
+    position: relative;
     margin: 0 auto;
+    padding: 0;
 }
 

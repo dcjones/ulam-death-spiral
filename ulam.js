@@ -100,7 +100,7 @@ var render = function(n)
     for (k = 0; k < ps.length; k += 1) {
         ctx.fillStyle = colork(ds[k + 1]);
         ctx.fillRect(ps[k].x * sx, ps[k].y * sy, sx, sy);
-        ctx.strokeRect(ps[k].x * sx, ps[k].y * sy, sx, sy);
+        // ctx.strokeRect(ps[k].x * sx, ps[k].y * sy, sx, sy);
     }
 
     var dest = document.getElementById("ulam");
@@ -139,7 +139,7 @@ var highlight = function(d)
         else {
             if ((k + 1) % d == 0) {
                 ctx.fillRect(ps[k].x * sx, ps[k].y * sy, sx, sy);
-                ctx.strokeRect(ps[k].x * sx, ps[k].y * sy, sx, sy);
+                // ctx.strokeRect(ps[k].x * sx, ps[k].y * sy, sx, sy);
             }
         }
     }
@@ -169,21 +169,38 @@ var xy_to_k = function(x, y)
 
 
 
-var n = 90;
+var n = 100;
 var d = 1;
 render(n);
 
-setInterval(
-    function() {
-        if (d < n * n) {
-            highlight(undefined);
-            highlight(d);
-            d += 1;
+// setInterval(
+//     function() {
+//         if (d < n * n) {
+//             highlight(undefined);
+//             highlight(d);
+//             d += 1;
+//         }
+//     }, 100);
+
+document.getElementById("more").addEventListener("click",
+    function(event) {
+        n += 30;
+        render(n);
+        event.preventDefault()
+    })
+
+
+document.getElementById("less").addEventListener("click",
+    function(event) {
+        if (n > 30) {
+            n -= 30;
+            render(n);
         }
-    }, 100);
+        event.preventDefault()
+    })
 
 
-document.getElementById("ulam").addEventListener("click",
+document.getElementById("ulam").addEventListener("mousemove",
     function(event) {
         var scrollx = document.documentElement.scrollLeft || document.body.scrollLeft
         var scrolly = document.documentElement.scrollTop || document.body.scrollTop
@@ -219,4 +236,6 @@ document.getElementById("ulam").addEventListener("mouseout",
     function(event) {
         highlight(undefined);
     })
+
+
 
