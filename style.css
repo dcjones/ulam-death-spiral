@@ -1,12 +1,12 @@
 
 body {
     color: #ddd;
-    background: #000;
+    background-color: #222;
 }
 
 header {
     color: #f5a;
-    font-family: PT Sans;
+    font-family: silkscreen;
     font-size: 48pt;
     text-align: center;
 }
