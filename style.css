@@ -1,32 +1,36 @@
 
+
+@font-face {
+    font-family: 'SilkscreenNormal';
+    src: url('slkscr-webfont.eot');
+    src: url('slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('slkscr-webfont.woff') format('woff'),
+         url('slkscr-webfont.ttf') format('truetype'),
+         url('slkscr-webfont.svg#SilkscreenNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-    color: #ddd;
+    color: #888;
     background-color: #222;
 }
 
 a {
-    color: #888;
+    color: #ddd;
     text-decoration: none;
     font-family: HelveticaNeue, Arial, sans-serif;
     font-size: 9pt;
 }
 
-a#more {
-    float: left;
-}
-
-a#wtf {
-    float: center;
-}
-
-a#less {
-    float: right;
+.controls {
+    text-align: right;
 }
 
 header {
     color: #f5a;
-    font-family: silkscreen;
-    font-size: 32pt;
+    font: 32pt 'SilkscreenNormal', Arial, san-serif;
     text-align: center;
 }
 

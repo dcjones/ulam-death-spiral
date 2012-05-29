@@ -100,7 +100,7 @@ var render = function(n)
     for (k = 0; k < ps.length; k += 1) {
         ctx.fillStyle = colork(ds[k + 1]);
         ctx.fillRect(ps[k].x * sx, ps[k].y * sy, sx, sy);
-        // ctx.strokeRect(ps[k].x * sx, ps[k].y * sy, sx, sy);
+        ctx.strokeRect(ps[k].x * sx, ps[k].y * sy, sx, sy);
     }
 
     var dest = document.getElementById("ulam");
