@@ -15,16 +15,23 @@
 body {
     color: #888;
     background-color: #222;
+    font-family: HelveticaNeue, Arial, sans-serif;
+    font-size: 9pt;
 }
 
 a {
     color: #ddd;
     text-decoration: none;
-    font-family: HelveticaNeue, Arial, sans-serif;
-    font-size: 9pt;
 }
 
-.controls {
+#hovered_num {
+    color: #f5a;
+    float: left;
+    text-align: left;
+}
+
+#controls {
+    float: right;
     text-align: right;
 }
 

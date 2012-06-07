@@ -168,14 +168,17 @@ $(document).ready ->
             d = ctx.xy_to_k(x, y)
             ctx.render_highlights(undefined)
             ctx.render_highlights(d)
+            $('#hovered_num').text(d)
         else
             ctx.render_highlights(undefined)
+            $('#hovered_num').text('')
 
         return
     )
 
     $('#ulam').mouseout((event) ->
         ctx.render_highlights(undefined)
+        $('#hovered_num').text('')
     )
 
     return
